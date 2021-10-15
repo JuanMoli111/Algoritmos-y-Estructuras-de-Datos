@@ -38,6 +38,8 @@ public class ListaEnlazadaGenerica<T> extends ListaGenerica<T> {
 		return (this.actual == null);
 	}
 
+
+	
 	@Override
 	public T elemento(int pos) {
 		if (pos < 1 || pos > this.tamanio()) // no es posicion valida
