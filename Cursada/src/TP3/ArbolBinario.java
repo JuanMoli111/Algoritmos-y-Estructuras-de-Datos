@@ -145,7 +145,7 @@ public class ArbolBinario<T> {
 			Cola.encolar(null);
 
 			//Mientras haya elementos 
-			while(!Cola.esVacia()){
+			while(!Cola.esVacia()){ 
 
 				//Saca un elemento
 				ArbolBinario<T> elem = Cola.desencolar();
@@ -189,8 +189,8 @@ public class ArbolBinario<T> {
 
 		//Si es vacio retornar cero
 		if(this.esVacio()) return 0;
-		//Si no tiene hijos es un arbol hoja, retornar uno
-		else if(!this.tieneHijoIzquierdo() && !this.tieneHijoDerecho())	return 1;
+		//Si es arbol hoja, retornar uno
+		else if(this.esHoja())	return 1;
 		else
 		{
 			int n = 0;
@@ -214,24 +214,23 @@ public class ArbolBinario<T> {
 
 	public ArbolBinario<T> espejo()
 	{
-		//Si es vacio retornar null	
-		if(this.esVacio()) return null;
+
+		ArbolBinario<T> ArbolEspejo = new ArbolBinario<>(this.getDato());
+
 		//Caso base si es una hoja retornar la misma hoja
-		if(!this.tieneHijoIzquierdo() && !this.tieneHijoDerecho()) return this;
+		if(this.esVacio() || this.esHoja())	return ArbolEspejo;
 		else
 		{
-			//Si es un nodo con hijos, crear un arbol cargarle este nodo
-			ArbolBinario<T> ArbolEspejo = new ArbolBinario<>(this.getDato());
-
-
 			//Procesar los hijos, si hay hijo izq, agregar al arbol espejo como hijo derecho, el hijo izq invocando el metodo espejo (recursion) y viceversa.
 			if(this.tieneHijoIzquierdo()) ArbolEspejo.agregarHijoDerecho(this.getHijoIzquierdo().espejo());
 
 			if(this.tieneHijoDerecho())  ArbolEspejo.agregarHijoIzquierdo(this.getHijoDerecho().espejo());
 			
 			//Retornar el arbol espejado
-			return ArbolEspejo;
 		}
+	
+		return ArbolEspejo;
+
 	}
 
 

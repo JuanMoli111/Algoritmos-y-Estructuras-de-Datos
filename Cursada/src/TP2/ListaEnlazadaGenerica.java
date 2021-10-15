@@ -215,7 +215,7 @@ public class ListaEnlazadaGenerica<T> extends ListaGenerica<T> {
 		return nueva;
 	}
 
-	public boolean agregar(T[] array)
+	public boolean agregarArreglo(T[] array)
 	{
 		boolean exito = true;
 
@@ -231,11 +231,27 @@ public class ListaEnlazadaGenerica<T> extends ListaGenerica<T> {
 				}				
 
 			} catch(Exception e) {
-				System.out.println(e.hashCode());
+				System.out.println(e.hashCode() + "error");
 			}
 
 		}
 
+		return exito;
+	}
+
+	public boolean agregarLista(ListaEnlazadaGenerica<T> Lista)
+	{
+		boolean exito = true;
+
+		try{
+			while(!Lista.fin())
+			{
+				this.agregarFinal(Lista.proximo());
+			}
+		}
+		catch(Exception e){
+			System.out.println("ERROR INESPERADO EN AGREGAR LISTA");
+		}
 		return exito;
 	}
 }

@@ -3,6 +3,7 @@ package TP2.EJ2.inc1;
 import TP1.EJ3.Estudiante;
 import TP2.ListaEnlazadaGenerica;
 
+
 public class TestListaEnlazadaGenerica {
     
 
@@ -27,15 +28,22 @@ public class TestListaEnlazadaGenerica {
         }
 
 
-        Lista.agregar(array);
+        Lista.agregarArreglo(array);
     
+        ListaEnlazadaGenerica<Estudiante> Lista2 = (ListaEnlazadaGenerica<Estudiante>) Lista.clonar();
+        
+        
+        Lista.agregarLista(Lista2);   
 
         Lista.comenzar();
 
         for(int i = 0; i < Lista.tamanio(); i++)
         {
-            System.out.println(Lista.proximo().toString());
+            System.out.println(Lista.proximo().tusDatos());
         }
+
+
+
     }
 
 
