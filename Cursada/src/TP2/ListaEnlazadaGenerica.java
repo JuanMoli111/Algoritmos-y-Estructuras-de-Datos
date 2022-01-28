@@ -1,4 +1,5 @@
 package TP2;
+
 /**
  * La clase ListaGenericaEnlazada es una ListaGenerica, donde los elementos de
  * la lista (nodos) referencian al siguiente elemento (nodo), por este motivo,
@@ -42,22 +43,24 @@ public class ListaEnlazadaGenerica<T> extends ListaGenerica<T> {
 	
 	@Override
 	public T elemento(int pos) {
-		if (pos < 1 || pos > this.tamanio()) // no es posicion valida
+		if (pos < 0 || pos > this.tamanio()) // no es posicion valida
 			return null;
+
 		NodoGenerico<T> n = this.inicio;
-		while (pos-- > 1)
+
+		while (pos-- > 0)
 			n = n.getSiguiente();
 		return n.getDato();
 	}
 
 	@Override
 	public boolean agregarEn(T elem, int pos) {
-		if (pos < 1 || pos > this.tamanio() + 1) // posicion no valida
+		if (pos < 0 || pos > this.tamanio()) // posicion no valida
 			return false;
 		this.tamanio++;
 		NodoGenerico<T> aux = new NodoGenerico<T>();
 		aux.setDato(elem);
-		if (pos == 1) { // inserta al principio
+		if (pos == 0) { // inserta al principio
 			aux.setSiguiente(inicio);
 			this.inicio = aux;
 			if (tamanio == 1) {
@@ -66,7 +69,7 @@ public class ListaEnlazadaGenerica<T> extends ListaGenerica<T> {
 		} else {
 			NodoGenerico<T> n = this.inicio;
 			NodoGenerico<T> ant = null;
-			int posActual = 1;
+			int posActual = 0;
 			while (!(n == null) && (posActual < pos)) {
 				ant = n;
 				n = n.getSiguiente();
@@ -143,16 +146,16 @@ public class ListaEnlazadaGenerica<T> extends ListaGenerica<T> {
 
 	@Override
 	public boolean eliminarEn(int pos) {
-		if (pos < 1 || pos > this.tamanio()) // posicion no valida
+		if (pos < 0 || pos > this.tamanio()) // posicion no valida
 			return false;
 		this.tamanio--;
-		if (pos == 1) {
+		if (pos == 0) {
 			this.inicio = this.inicio.getSiguiente();
 			return true;
 		}
 		NodoGenerico<T> n = this.inicio;
 		NodoGenerico<T> ant = null;
-		while (!(n == null) && (pos > 1)) {
+		while (!(n == null) && (pos > 0)) {
 			pos--;
 			ant = n;
 			n = n.getSiguiente();
@@ -196,10 +199,10 @@ public class ListaEnlazadaGenerica<T> extends ListaGenerica<T> {
 
 	@Override
 	public boolean reemplazarEn(T elem, int pos) {
-		if (pos < 1 || pos > this.tamanio()) // posicion no valida
+		if (pos < 0 || pos > this.tamanio()) // posicion no valida
 			return false;
 		NodoGenerico<T> n = this.inicio;
-		while (!(n == null) && (pos > 1)) {
+		while (!(n == null) && (pos > 0)) {
 			pos--;
 			n = n.getSiguiente();
 		}

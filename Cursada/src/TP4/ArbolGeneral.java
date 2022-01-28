@@ -163,7 +163,7 @@ public class ArbolGeneral<T> {
 							Cola.encolar(lHijos.proximo());
 
 					}
-				}
+				} 
 				else
 					if(!Cola.esVacia())
 					{

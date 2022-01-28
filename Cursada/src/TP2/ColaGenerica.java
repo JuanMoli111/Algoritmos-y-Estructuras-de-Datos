@@ -23,7 +23,7 @@ public class ColaGenerica<T> {
 
     public T tope()
     {
-        return datos.elemento(0);
+        return datos.elemento(1);
     }
 
     public boolean esVacia()
