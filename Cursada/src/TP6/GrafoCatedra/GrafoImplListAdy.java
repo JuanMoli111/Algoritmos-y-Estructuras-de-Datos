@@ -4,13 +4,14 @@ import TP2.ListaEnlazadaGenerica;
 import TP2.ListaGenerica;
 
 /**
- * Implementacion del grafo con lista de ady
+ * grafo dirigido implementado con lista de adyacencias
  * 
  * @author juan
  *
  */
 
 public class GrafoImplListAdy<T> implements Grafo<T> {
+	
 	ListaGenerica<Vertice<T>> vertices = new ListaEnlazadaGenerica<Vertice<T>>();
 
 
@@ -100,4 +101,6 @@ public class GrafoImplListAdy<T> implements Grafo<T> {
 	public Vertice<T> vertice(int posicion){
 		return vertices.elemento(posicion);
 	}
+
+
 }

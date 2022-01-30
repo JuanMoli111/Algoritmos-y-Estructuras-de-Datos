@@ -7,7 +7,7 @@ import TP2.ListaEnlazadaGenerica;
 import TP2.ListaGenerica;
 
 /**
- * Implementacion del grafo con matriz
+ * grafo dirigido implementado con lista de adyacencias
  * 
  * @author juan
  *
@@ -96,11 +96,11 @@ public class GrafoImplMatrizAdy<T> implements Grafo<T> {
     @Override
     public ListaGenerica<Arista<T>> listaDeAdyacentes(Vertice<T> v) {
         ListaGenerica<Arista<T>> ady = new ListaEnlazadaGenerica<Arista<T>>();
-        int veticePos = ((VerticeImplMatrizAdy<T>) v).getPosicion();
+        int verticePos = ((VerticeImplMatrizAdy<T>) v).getPosicion();
         Arista<T> arista;
         for (int i = 1; i <= vertices.tamanio(); i++) {
-            if (matrizAdy[veticePos][i] > 0) {
-                arista = new AristaImpl<T>(vertices.elemento(i), matrizAdy[veticePos][i]);
+            if (matrizAdy[verticePos][i] > 0) {
+                arista = new AristaImpl<T>(vertices.elemento(i), matrizAdy[verticePos][i]);
                 ady.agregarFinal(arista);
             }
         }
