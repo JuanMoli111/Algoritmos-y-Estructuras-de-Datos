@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch TestP3E5",
+            "request": "launch",
+            "mainClass": "Cursada2022.TP3.EJ5.TestP3E5",
+            "projectName": "JAVA_528a0e5e"
+        },
+        {
+            "type": "java",
             "name": "Launch TestRedBinariaLlena",
             "request": "launch",
             "mainClass": "Cursada2022.TP3.EJ4.TestRedBinariaLlena",
