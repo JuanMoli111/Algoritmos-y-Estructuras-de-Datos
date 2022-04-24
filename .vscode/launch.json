@@ -1,0 +1,252 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch TestContador",
+            "request": "launch",
+            "mainClass": "Cursada2022.TP3.EJ3.TestContador",
+            "projectName": "JAVA_528a0e5e"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestTree",
+            "request": "launch",
+            "mainClass": "Cursada2022.TP3.ArbolBinario.TestTree",
+            "projectName": "JAVA_528a0e5e"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestBalanceo",
+            "request": "launch",
+            "mainClass": "Cursada2022.TP2.EJ4.TestBalanceo",
+            "projectName": "JAVA_528a0e5e"
+        },
+        {
+            "type": "java",
+            "name": "Launch Testing",
+            "request": "launch",
+            "mainClass": "Cursada2022.TP2.EJ3.Testing",
+            "projectName": "JAVA_528a0e5e"
+        },
+        {
+            "type": "java",
+            "name": "Launch ej1_6",
+            "request": "launch",
+            "mainClass": "Cursada2022.TP2.eje1.ej1_6",
+            "projectName": "JAVA_528a0e5e"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestListaDeEnterosConArreglos",
+            "request": "launch",
+            "mainClass": "Cursada2022.TP2.eje1.TestListaDeEnterosConArreglos",
+            "projectName": "JAVA_528a0e5e"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestListaDeEnterosEnlazada",
+            "request": "launch",
+            "mainClass": "Cursada2022.TP2.eje1.TestListaDeEnterosEnlazada",
+            "projectName": "JAVA_528a0e5e"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestListaDeEnterosConArreglos",
+            "request": "launch",
+            "mainClass": "Cursada2022.TP2.ListasDeEnteros.tests.TestListaDeEnterosConArreglos",
+            "projectName": "JAVA_528a0e5e"
+        },
+        {
+            "type": "java",
+            "name": "Launch eje5",
+            "request": "launch",
+            "mainClass": "Cursada2022.TP1.EJ5.eje5",
+            "projectName": "JAVA_528a0e5e"
+        },
+        {
+            "type": "java",
+            "name": "Launch SwapValores",
+            "request": "launch",
+            "mainClass": "Cursada2022.TP1.EJ4.SwapValores",
+            "projectName": "JAVA_528a0e5e"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test",
+            "request": "launch",
+            "mainClass": "Cursada2022.TP1.EJ3.Test",
+            "projectName": "JAVA_528a0e5e"
+        },
+        {
+            "type": "java",
+            "name": "Launch eje2",
+            "request": "launch",
+            "mainClass": "Cursada2022.TP1.EJ2.eje2",
+            "projectName": "JAVA_528a0e5e"
+        },
+        {
+            "type": "java",
+            "name": "Launch eje2",
+            "request": "launch",
+            "mainClass": "eje2",
+            "projectName": "JAVA_528a0e5e"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch HeapBinariaEnteros",
+            "request": "launch",
+            "mainClass": "HeapBinariaEnteros",
+            "projectName": "JAVA_528a0e5e"
+        },
+        {
+            "type": "java",
+            "name": "Launch Parcial",
+            "request": "launch",
+            "mainClass": "Parcial",
+            "projectName": "JAVA_528a0e5e"
+        },
+        {
+            "type": "java",
+            "name": "Launch eje1",
+            "request": "launch",
+            "mainClass": "TP1.EJ1.eje1",
+            "projectName": "JAVA_528a0e5e"
+        },
+        {
+            "type": "java",
+            "name": "Launch eje2",
+            "request": "launch",
+            "mainClass": "TP1.EJ2.eje2",
+            "projectName": "JAVA_528a0e5e"
+        },
+        {
+            "type": "java",
+            "name": "Launch test",
+            "request": "launch",
+            "mainClass": "TP1.EJ3.test",
+            "projectName": "JAVA_528a0e5e"
+        },
+        {
+            "type": "java",
+            "name": "Launch SwapValores",
+            "request": "launch",
+            "mainClass": "TP1.EJ4.SwapValores",
+            "projectName": "JAVA_528a0e5e"
+        },
+        {
+            "type": "java",
+            "name": "Launch eje5",
+            "request": "launch",
+            "mainClass": "TP1.EJ5.eje5",
+            "projectName": "JAVA_528a0e5e"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestListaDeEnterosConArreglos",
+            "request": "launch",
+            "mainClass": "TP2.EJ1.TestListaDeEnterosConArreglos",
+            "projectName": "JAVA_528a0e5e"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestListaDeEnterosEnlazada",
+            "request": "launch",
+            "mainClass": "TP2.EJ1.TestListaDeEnterosEnlazada",
+            "projectName": "JAVA_528a0e5e"
+        },
+        {
+            "type": "java",
+            "name": "Launch eje1inc5",
+            "request": "launch",
+            "mainClass": "TP2.EJ1.eje1inc5",
+            "projectName": "JAVA_528a0e5e"
+        },
+        {
+            "type": "java",
+            "name": "Launch eje1inc6",
+            "request": "launch",
+            "mainClass": "TP2.EJ1.eje1inc6",
+            "projectName": "JAVA_528a0e5e"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestListaEnlazadaGenerica",
+            "request": "launch",
+            "mainClass": "TP2.EJ2.inc1.TestListaEnlazadaGenerica",
+            "projectName": "JAVA_528a0e5e"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestBalanceo",
+            "request": "launch",
+            "mainClass": "TP2.EJ4.TestBalanceo",
+            "projectName": "JAVA_528a0e5e"
+        },
+        {
+            "type": "java",
+            "name": "Launch Contador",
+            "request": "launch",
+            "mainClass": "TP3.EJ3.Contador",
+            "projectName": "JAVA_528a0e5e"
+        },
+        {
+            "type": "java",
+            "name": "Launch RedBinariaLlena",
+            "request": "launch",
+            "mainClass": "TP3.EJ4.RedBinariaLlena",
+            "projectName": "JAVA_528a0e5e"
+        },
+        {
+            "type": "java",
+            "name": "Launch ProfundidadDeArbolBinario",
+            "request": "launch",
+            "mainClass": "TP3.EJ5.ProfundidadDeArbolBinario",
+            "projectName": "JAVA_528a0e5e"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestArboles",
+            "request": "launch",
+            "mainClass": "TP3.TestArboles",
+            "projectName": "JAVA_528a0e5e"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestArbolGeneral",
+            "request": "launch",
+            "mainClass": "TP4.TestArbolGeneral",
+            "projectName": "JAVA_528a0e5e"
+        },
+        {
+            "type": "java",
+            "name": "Launch BuscadorEnArrayOrdenado",
+            "request": "launch",
+            "mainClass": "TP5.BuscadorEnArrayOrdenado",
+            "projectName": "JAVA_528a0e5e"
+        },
+        {
+            "type": "java",
+            "name": "Launch Banco",
+            "request": "launch",
+            "mainClass": "TP5.EjemploBanco.Banco",
+            "projectName": "JAVA_528a0e5e"
+        },
+        {
+            "type": "java",
+            "name": "Launch GrafoListaAdyTest",
+            "request": "launch",
+            "mainClass": "TP6.GrafoCatedra.GrafoListaAdyTest",
+            "projectName": "JAVA_528a0e5e"
+        }
+    ]
+}
