@@ -60,7 +60,7 @@ public class ContadorArbol {
 
         return Lista;
     }
-
+    //ola
 
     //Recorre el arbol post orden, devuelve una lista con los Integer pares del arbol, si el arbol es vacio devuelve NULO
     public ListaEnlazadaGenerica<Integer> numerosParesPostOrden(){
